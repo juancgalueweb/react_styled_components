@@ -5,6 +5,9 @@ export const Apps = styled.div`
   background-color: #ddd;
   margin: 0 auto;
   padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 export const Header = styled.div`
@@ -17,8 +20,7 @@ export const Header = styled.div`
 
 export const Navigation = styled.div`
   min-height: 300px;
-  width: 34%;
-  display: inline-block;
+  flex-grow: 1;
   vertical-align: top;
   margin-right: 15px;
   background-color: #6fa8dc;
@@ -27,25 +29,26 @@ export const Navigation = styled.div`
 
 export const Main = styled.div`
   min-height: 370px;
-  width: 65.2%;
-  display: inline-block;
+  flex-grow: 2;
   background-color: #e06666;
   border: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 export const SubContent = styled.div`
   min-height: 200px;
-  width: 31.7%;
+  flex-basis: 31%;
   margin: 10px;
-  display: inline-block;
   background-color: #ffd966;
   border: 2px solid #000;
 `;
 
 export const Advertisement = styled.div`
   min-height: 120px;
-  width: 98%;
-  margin: 10px auto;
+  flex-basis: 100%;
+  margin: 10px;
   background-color: #b4a7d6;
   border: 2px solid #000;
 `;
